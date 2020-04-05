@@ -18,7 +18,13 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            social { twitter }
+            social {
+              twitter
+            }
+            author {
+              name
+              summary
+            }
           }
         }
       }
@@ -26,6 +32,7 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const type = 'blog'
 
   return (
     <Helmet
@@ -66,6 +73,14 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `copyrightHolder`,
+          content: site.siteMetadata.author.name,
+        },
+        {
+          name: `articleSection`,
+          content: type,
         },
       ].concat(meta)}
     />
