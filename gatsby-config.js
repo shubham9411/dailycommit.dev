@@ -5,7 +5,7 @@ module.exports = {
       name: `Shubham Pandey`,
       summary: `– documenting his journey of making cool thing in the web.`,
     },
-    description: `A webog of shubham pandey of ducumenting his journey of making cool thing in the web.`,
+    description: `A weblog of shubham pandey of documenting his journey of making cool thing in the web.`,
     siteUrl: `https://dailycommit.dev/`,
     social: {
       twitter: `shubham9411`,
