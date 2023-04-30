@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from "../components/layout"
+import SEO from '../components/seo'
 
 export default function PrivacyPolicy({ data, location }) {
   const siteTitle = data.site.siteMetadata.title
