@@ -228,3 +228,13 @@ export default function PrivacyPolicy({ data, location }) {
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
