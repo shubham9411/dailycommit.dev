@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from "../components/layout"
 
-export default function PrivacyPolicy() {
+export default function PrivacyPolicy({ data, location }) {
+  const siteTitle = data.site.siteMetadata.title
   return (
-    <Layout>
+    <Layout title={siteTitle} location={location}>
+      <SEO title="Privacy Policy" />
       <h1>Privacy Policy</h1>
       <p>Last updated: April 30, 2023</p>
       <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information
